@@ -1,7 +1,7 @@
 //Deffine UI vars
 const form = document.querySelector('#task-form');
 const taskList = document.querySelector('.collection');
-const clearBtn = document.querySelector('.clear-tasks');
+const clearButton = document.querySelector('.clear-tasks');
 const filter = document.querySelector('#filter');
 const taskInput = document.querySelector('#task');
 
@@ -20,7 +20,7 @@ function loadEventListeners() {
     // Remove task
     taskList.addEventListener('click', removeTask);
     // Clear task event
-    clearBtn.addEventListener('click', clearTasks);
+    clearButton.addEventListener('click', clearTasks);
     // Filter tasks event
     filter.addEventListener('keyup', filterTasks);
 
@@ -61,7 +61,7 @@ function loadEventListeners() {
     // Add task
 function addTask(e) {
     if(taskInput.value === '') {
-        alert('Mag lagay ka!');
+        alert('MINARI');
     } else{
         //create li element
         const li = document.createElement('li');
